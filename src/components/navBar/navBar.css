@@ -18,16 +18,51 @@
     display: flex;
     flex-direction: column;
 }
-
-.buttonOne {
+.containerBtn{
+    width: 100%;
+    display: flex;
+}
+.containerBtnCart{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.containerImg{
+    width: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+.containerBtn2{
     width: 50%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.buttonOne {
+    width: 100%;
+    
 }
 .buttonTwo{
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    
 }
 .buttonThree{
+    width: 100%;
+    
+}
+
+.imgCarrito {
     width: 50%;
+}
+
+.imgText{
+    text-align: center;
     margin: auto;
+    color: black;
+    font-weight: bold;
+    width: 50%;
 }
