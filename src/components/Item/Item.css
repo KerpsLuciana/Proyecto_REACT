@@ -1,0 +1,47 @@
+.card{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    padding: 10px ;
+    flex-direction: column;
+    background: rgb(235, 228, 228);
+    justify-content: center;
+    align-content:center;
+    border-radius: 25px;
+    margin:25px auto;
+}
+.cardTitle{
+    font-size: 1rem;
+    color: rgb(118, 118, 118);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.containerImg{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.img{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.cardPrice{
+    color: rgb(157, 157, 157);
+    font-size: 1.5rem;
+    text-align: end;
+    margin: 10px 25px;
+    filter: drop-shadow( 1px 1px 1px rgb(17, 13, 17));
+}
+
+.cardBtn{
+    width: 50%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
