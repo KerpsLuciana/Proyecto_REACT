@@ -1,0 +1,46 @@
+.containerCardService{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardpromociones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        background: rgb(228, 223, 192);
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 5px white;
+        margin-top: 10px;
+}
+.cardpromociones__img {
+            width: 80%;
+            padding: 20px;
+}
+
+.card__image2 {
+
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+            
+
+.cardpromociones__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card__text2 {
+    color: rgb(7, 6, 6);
+    margin: 5px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}

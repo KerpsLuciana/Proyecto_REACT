@@ -1,6 +1,6 @@
-import './navBar.css'
+import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget';
-
+import { Link} from 'react-router-dom'
 function NavBar(){
     return <>
         <nav className ="container" >
@@ -8,18 +8,17 @@ function NavBar(){
                 <h2 className ="menu">FLEXRAPPI</h2>
                 <p className ="paragraphOne">Alcanzando tus platos favoritos desde 2018</p>
                 <div className="containerBtn2">
-                    <button className ="buttonOne">Inicio</button>
+                    <Link to='/'className ="buttonOne">Inicio</Link>
                     <button className ="buttonTwo">Sobre nosotros</button>
-                    <button className ="buttonThree">Registrarme</button>
                 </div>  
             </div>
             <div className="containerBtnCart">
                 <CartWidget/>
                 <div className="containerBtn1">
-                    <button className='btnCat'>Restaurantes</button>
-                    <button className='btnCat'>Bebidas</button>
-                    <button className='btnCat'>Supermercados</button>
-                    <button className='btnCat'>Farmacias</button>
+                    <Link to= '/type/restaurantes' className='btnCat'>Restaurantes</Link>
+                    <Link to='/type/bebidas' className='btnCat'>Bebidas</Link>
+                    <Link to='/type/supermercado' className='btnCat'>Supermercados</Link>
+                    <Link to='/type/farmacia'className='btnCat'>Farmacias</Link>
                 </div>
             </div>
             

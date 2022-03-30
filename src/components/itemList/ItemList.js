@@ -1,4 +1,4 @@
-import './itemList.css';
+import './ItemList.css';
 import { getProducts } from "../../asynmock"
 import { useState, useEffect } from "react"
 import Item from "../Item/Item"
@@ -16,7 +16,7 @@ const ItemList = () => {
         <div>
             <ul className="ulProducts">
                 {products.map(product => <li key={product.id}>
-                                            <Item name={product.name} price={product.price} img={product.img} stock={product.stock}/>
+                                            <Item {...product}/>
                                         </li>)}
                 
             </ul>

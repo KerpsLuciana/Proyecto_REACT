@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/navBar/navbar';
+import NavBar from './components/navBar/Navbar';
 import ItemlistContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -10,13 +12,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <BrowserRouter>
         <NavBar/>
-        </header>
-        <section>
-        
-        <ItemlistContainer greeting="Gracias por visitarnos"/>
-        </section>
+        <Routes>
+        <Route path='/' element={<ItemlistContainer/>} />
+        <Route path='/type/:categorytype' element={<ItemlistContainer/>}/>
+        <Route path='/Item/:id' element={<ItemDetailContainer/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

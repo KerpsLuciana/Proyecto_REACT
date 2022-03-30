@@ -1,22 +1,16 @@
 import './Item.css';
-import ItemCount from '../ItemCount/ItemCount';
+import {Link} from 'react-router-dom';
 
-function Item ({name,price,img,stock}){
-    const onAdd = (quantity) => {
-        console.log(quantity)
-      }
+function Item ({name,price,img, id}){
+
     return(
         <div className="card">
             <div className='containerImg'>
                 <img src={img}  className='img'/>
             </div>
-            
                 <h3 className='cardTitle'>{name}</h3>
                 <p className='cardPrice'>{price}</p>
-            <div>
-            <ItemCount initial={1} stock={stock} onAdd={onAdd}/>
-            </div>
-            <button className='cardBtn'>Mas Info</button>
+            <Link to={`/Item/${id}`} className='cardBtn'>Mas info</Link>
         </div>
 
     )
