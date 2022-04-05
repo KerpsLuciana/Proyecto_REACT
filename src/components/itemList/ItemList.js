@@ -1,26 +1,19 @@
 import './ItemList.css';
-import { getProducts } from "../../asynmock"
-import { useState, useEffect } from "react"
-import Item from "../Item/Item"
-const ItemList = () => {
-    const [products, setProducts] = useState([])
 
-    useEffect(() => {
-        getProducts().then(response => {
-            setProducts(response)
-        })
-    },[])
+import Item from "../Item/Item";
+const ItemList = ({products}) => {
+    
 
     console.table(products)
-    return(
+    return (
         <div>
             <ul className="ulProducts">
-                {products.map(product => <li key={product.id}>
-                                            <Item {...product}/>
-                                        </li>)}
-                
+                {products.map(product => <li><Item key={product.id} {...product}/></li>)}
             </ul>
-        </div>
+            
+        </div> 
+        
     )
 }
-export default ItemList;
+
+export default ItemList

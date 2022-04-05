@@ -32,7 +32,7 @@ export const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             resolve(products)
-        }, 2000)
+        }, 1000)
     })
 }
 
@@ -40,7 +40,7 @@ export const getProductByType = (categorytype) => {
     return new Promise((resolve)=> {
         setTimeout(()=> {
             resolve(products.filter(prod => prod.type === categorytype))
-        },1500)
+        }, 500)
     })
 }
 

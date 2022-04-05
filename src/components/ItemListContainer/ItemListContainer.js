@@ -4,9 +4,12 @@ import {useState, useEffect} from 'react'
 import { getProductByType, getProducts } from "../../asynmock"
 function ItemlistContainer(){
     const [products, setProducts] = useState([])
+
     const [loading, setLoading] =useState(true)
+
     const {categorytype} = useParams()
     console.log(categorytype)
+
     useEffect(()=>{
         if(categorytype) {
             setLoading(true)
@@ -34,6 +37,7 @@ function ItemlistContainer(){
             setProducts([])
         })
     }, [categorytype])
+    
     if (loading) {
         return <h2>Cargando...</h2>
     }
@@ -43,7 +47,7 @@ function ItemlistContainer(){
     return(
         <div>
             <h2 className="greeting">NUESTROS COMBOS MÁS PEDIDOS</h2>
-            <ItemList />
+            <ItemList products={products} />
         </div>
     )
 }
