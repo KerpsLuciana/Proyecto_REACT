@@ -24,7 +24,70 @@ const products = [
         price: 1800,
         stock: 30,
         type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:4,
+        name:"Big bear restaurant",
+        img:"../img/logopaty1.jpg",
+        price: 800,
+        stock: 20,
+        type:"Hamburguesa",
+        description:"Hamburguesa con doble carne, cheddar, lechuga, tomate y huevo. Podés modificar alguno de los ingredientes por otros, opciones disponibles: Provoleta, morrones, salsa picante, cebolla caramelizada, pepino, panceta y jamon"        
+    },
+    {                   //MODIFICAR
+        id:5,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:6,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:7,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:8,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:9,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+    },
+    {                   //MODIFICAR
+        id:10,
+        name:"combo farmacia en casa",
+        img:"../img/farmacia1.jpg",
+        price: 1800,
+        stock: 30,
+        type:"farmacia",
+        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
     }
 ]
 

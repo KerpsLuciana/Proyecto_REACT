@@ -1,10 +1,14 @@
+import {useState} from 'react'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({name, price, img, stock, description}) => {
 
-    const onAdd = (quantity) => {
-        console.log(quantity)
+    const [quantity, setQuantity] = useState (0)
+
+    const handleOnAdd = (count) => {
+        console.log('se agrego el producto al carrito '+ count)
+        setQuantity(count)
     }
     return (
             <div className="cardpromociones">
@@ -22,7 +26,7 @@ const ItemDetail = ({name, price, img, stock, description}) => {
                     <p>Stock disponible: {stock}</p>
                 </div>
                 <div>
-                    <ItemCount initial={1} stock={stock} onAdd={onAdd}/>
+                    { quantity === 0 ? <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/> : <button>Ir al carrito</button>}
                 </div>
             </div>
     )
