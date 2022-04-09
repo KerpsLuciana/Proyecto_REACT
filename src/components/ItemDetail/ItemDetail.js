@@ -7,7 +7,7 @@ const ItemDetail = ({name, price, img, stock, description}) => {
     const [quantity, setQuantity] = useState (0)
 
     const handleOnAdd = (count) => {
-        console.log('se agrego el producto al carrito '+ count)
+        alert('se agrego el producto al carrito '+ count)
         setQuantity(count)
     }
     return (
