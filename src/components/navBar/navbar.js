@@ -15,10 +15,11 @@ function NavBar(){
             <div className="containerBtnCart">
                 <CartWidget/>
                 <div className="containerBtn1">
-                    <Link to= '/type/restaurantes' className='btnCat'>Hamburguesas</Link>
-                    <Link to='/type/bebidas' className='btnCat'>Pizzas/Empanadas</Link>
-                    <Link to='/type/supermercado' className='btnCat'>Bebidas</Link>
-                    <Link to='/type/farmacia'className='btnCat'>Otros</Link>
+                    <Link to= '/type/Hamburguesa' className='btnCat'>Hamburguesas</Link>
+                    <Link to='/type/Pizza' className='btnCat'>Pizzas</Link>
+                    <Link to='/type/Empanadas' className='btnCat'>Empandas</Link>
+                    <Link to='/type/Bebidas' className='btnCat'>Bebidas</Link>
+                    <Link to='/type/otro'className='btnCat'>Otros</Link>
                 </div>
             </div>
             

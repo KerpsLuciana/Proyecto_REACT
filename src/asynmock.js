@@ -4,7 +4,7 @@ const products = [
         name:"combo previa 1",
         price:2500,
         stock:25,
-        type:"bebidas",
+        type:"Bebidas",
         img:"../img/bebidas1.jpg",
         description:"combo ideal para la juntada con amigos"
     },
@@ -14,17 +14,17 @@ const products = [
         img:"../img/comida2.jpg",
         price: 1500,
         stock:10,
-        type:"restaurantes",
+        type:"Hamburguesa",
         description:"Lo que tu corazon necesita y tu estomago te pide"
     },
     {
         id:3,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
+        name:"Pizzeria kerps",
+        img:"../img/pizza1.png",
+        price: 700,
         stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        type:"Pizza",
+        description:"Pizzas a leña elaboradas con la mejor calidad."        
     },
     {                   //MODIFICAR
         id:4,
@@ -37,48 +37,48 @@ const products = [
     },
     {                   //MODIFICAR
         id:5,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
-        stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        name:"Ringo comidas rapidas",
+        img:"../img/logopaty2.jpg",
+        price: 1200,
+        stock: 15,
+        type:"Hamburguesa",
+        description:"Hamburguesas dobles y triples, acompañalas con papas o aros de cebolla por $70 más. "        
     },
     {                   //MODIFICAR
         id:6,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
+        name:"Pizza brow",
+        img:"../img/logopizza2.jpg",
+        price: 900,
         stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        type:"Pizza",
+        description:"Pizzas sin bordes con 200gr de muzzarella para hacer de tu cena la mejor, elegi con o sin aceitunas."        
     },
     {                   //MODIFICAR
         id:7,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
-        stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        name:"Delivery de bebidas",
+        img:"../img/bebidas4.jpg",
+        price: 2000,
+        stock: 50,
+        type:"Bebidas",
+        description:"Para previas, cumpleaños o una simple cena, somos tu mejor opción de bebidas veloces a tu hogar"        
     },
     {                   //MODIFICAR
         id:8,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
-        stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        name:"Monster crave",
+        img:"../img/logopaty3.jpg",
+        price: 1500,
+        stock: 40,
+        type:"Hamburguesa",
+        description:"Hamburguesas simples y dobles, acompañadas de aderezos a tu gusto, agregale huevo frito o provoletta por $50."        
     },
     {                   //MODIFICAR
         id:9,
-        name:"combo farmacia en casa",
-        img:"../img/farmacia1.jpg",
-        price: 1800,
-        stock: 30,
-        type:"farmacia",
-        description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
+        name:"Empanadas sabrosos",
+        img:"../img/empanadas2.jpg",
+        price: 260,
+        stock: 100,
+        type:"Empanadas",
+        description:"Empanadas norteñas con 12 variedades para que elijas lo que más te apetece."        
     },
     {                   //MODIFICAR
         id:10,
@@ -86,7 +86,7 @@ const products = [
         img:"../img/farmacia1.jpg",
         price: 1800,
         stock: 30,
-        type:"farmacia",
+        type:"otro",
         description:"Necesitas algo de tu farmacia somos tu mejor opcion"        
     }
 ]
