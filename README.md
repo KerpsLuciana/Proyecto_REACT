@@ -1,2 +1,2 @@
 El proyecto "Flex Rappi" es una app web para pedir comida y productos al hogar/trabajo de nuestros usuarios.
-Al momento cuenta con 4 categorias (bebidas/restaurantes/supermercados/farmacias) y una opcion de filtrar entre las distintas categorias, la idea es sumar un carrito con interacción, más productos a cada sección, pie de página y un formulario de ayuda para que nuestros usuarios puedan comunicarse con nosotros.
+Al momento cuenta con 4 categorias (bebidas/pizzas/empanadas/hamburguesas/otros) y una opcion de filtrar entre las distintas categorias, la idea es sumar un carrito con interacción, más productos a cada sección, pie de página y un formulario de ayuda para que nuestros usuarios puedan comunicarse con nosotros.
