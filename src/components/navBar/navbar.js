@@ -1,7 +1,11 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget';
 import { Link} from 'react-router-dom'
+import { useContext } from "react"
+import Context from "../../context/Context"
+
 function NavBar(){
+    const {getQuantity} = useContext(Context)
     return <>
         <nav className ="container" >
             <div className='subContainer'>
@@ -13,7 +17,7 @@ function NavBar(){
                 </div>  
             </div>
             <div className="containerBtnCart">
-                <CartWidget/>
+                {getQuantity()>0 && <CartWidget/>}
                 <div className="containerBtn1">
                     <Link to= '/type/Hamburguesa' className='btnCat'>Hamburguesas</Link>
                     <Link to='/type/Pizza' className='btnCat'>Pizzas</Link>

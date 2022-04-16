@@ -27,6 +27,14 @@ export const CartContextProvider = ({children}) => {
 
     }
 
+    const priceGlobal = () => {
+        let global = 0
+        for (const i of cart) {
+            global+= i.quantity * i.price
+        }
+        return global
+    }
+
     const removeItem = (id) => {
             cart.filter(
                 (prod)=> {
@@ -51,7 +59,7 @@ export const CartContextProvider = ({children}) => {
     }
 
     return (
-        <Context.Provider value= {{cart, addItem, clearCart, getQuantity, removeItem}}>
+        <Context.Provider value= {{cart, addItem, clearCart, getQuantity, removeItem, priceGlobal}}>
             {children}
         </Context.Provider>
     )
