@@ -1,42 +1,44 @@
 import ItemList from "../itemList/ItemList"
 import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import { getProductByType, getProducts } from "../../asynmock"
+import {getProducts} from '../../services/firebase/firestore'
+// import { getProductByType, getProducts } from "../../asynmock"
 function ItemlistContainer(){
     const [products, setProducts] = useState([])
 
     const [loading, setLoading] =useState(true)
 
-    const {categorytype} = useParams()
-    console.log(categorytype)
+    const {categoryType} = useParams()
+    console.log(categoryType)
 
     useEffect(()=>{
-        if(categorytype) {
-            setLoading(true)
+        // if(categorytype) {
+        //     setLoading(true)
 
-            getProductByType(categorytype).then(items => {
+        //     getProductByType(categorytype).then(items => {
+        //         setProducts(items)
+        //     }).catch(err =>{
+        //         console.log(err)
+        //     }).finally(()=> {
+        //         setLoading(false)
+        //     })
+        // }else{
+            
+        // }
+        setLoading(true)
+
+            getProducts(categoryType).then(items => {
                 setProducts(items)
-            }).catch(err =>{
-                console.log(err)
-            }).finally(()=> {
-                setLoading(false)
-            })
-        }else{
-            setLoading(true)
-
-            getProducts().then(item => {
-                setProducts(item)
             }).catch(err=> {
                 console.log(err)
             }).finally(()=>{
                 setLoading(false)
             })
-        }
 
         return(()=>{
             setProducts([])
         })
-    }, [categorytype])
+    }, [categoryType])
     
     if (loading) {
         return <h2>Cargando...</h2>
